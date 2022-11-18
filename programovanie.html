@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Programovanie</title>
+  <script src="navigation.js" defer></script>
+  <script src="tabs.js" defer></script>
+</head>
+<body class="pozadie3">
+  <header class="primary-header flex">
+    <div>
+      <a href="index.html">
+      <img src="./assets/logo.png" alt="spspp logo" class="logo">
+      </a>
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true"></span>Domov</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="tlaciarne.html"><span aria-hidden="true"></span>3DTlač</a>
+              <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="tlaciarne2.html"><span aria-hidden="true"></span>Tlačiarne</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="programovanie.html"><span aria-hidden="true"></span>Programovanie</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="oprojekte.html"><span aria-hidden="true"></span>OProjekte</a>
+        </ul>
+    </nav>
+  </header>
+  
+  <main id="main" class="grid-container grid-container--main flow">
+    <h1 class="numbered-title"><span aria-hidden="true"></span>Programovanie</h1>
+
+    <picture id="programovanie-image" style="opacity: 75%; justify-items: center;">
+      <img src="assets/prog.png" alt="">
+    </picture>
+    <picture hidden id="html-image">
+      <img src="assets/html.png" alt="">
+    </picture>
+    <picture hidden id="css-image">
+      <img src="assets/css.png" alt="">
+    </picture>
+    <picture hidden id="javascript-image">
+      <img src="assets/javascript.png" alt="">
+    </picture>
+    <picture hidden id="priklad-image" alt="">
+      <img src="assets/priklad1.png" alt="" style="border-radius: 15px;">
+      <img src="assets/priklad2.png" alt="" style="border-radius: 15px;">
+      <img src="assets/priklad3.png" alt="" style="border-radius: 15px;">
+
+    </picture>
+
+
+    
+    
+    <div class="tab-list underline-indicators flex" role="tablist" aria-label="main list">
+        <button aria-selected="true" role="tab" aria-controls="programovanie-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="0" data-image="programovanie-image">Čo to je?</button>
+        <button aria-selected="false" role="tab" aria-controls="html-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="html-image">HTML</button>
+        <button aria-selected="false" role="tab" aria-controls="css-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="css-image">CSS</button>
+        <button aria-selected="false" role="tab" aria-controls="javascript-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="javascript-image">JavaScript</button>
+
+        <button aria-selected="false" role="tab" aria-controls="priklad-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="priklad-image">Príklad</button>
+
+    </div>
+
+    <!-- programovanie -->
+    <article class="main-info flow" id="programovanie-tab" tabindex="0" role="tabpanel">
+      <p><b>Programovanie</b> je proces návrhu algoritmu, písanie, testovanie a ladenie zdrojového kódu počítačového programu.<br>
+         Návrh algoritmu obvykle určuje všeobecný postup
+         riešenia danej úlohy. Zdrojový kód programu je zápisom algoritmu v zvolenom programovacom jazyku.
+         <br><b>Front-end</b> je to informačná časť stránky ku ktorej má koncový uživateľ prístup
+         <br><b>Back-end</b> skupina informácii, ktorá sa nezobrazuje na web stránke iba ju riadi. </p>
+      <div class="main-meta flex"></div>
+    </article>
+    
+    <!-- html -->
+    <article hidden class="main-info flow" id="html-tab" tabindex="0" role="tabpanel">
+      <p><b>HTML</b> HyperText Markup Language je štandardný značkovací jazyk pre dokumenty určené na zobrazenie vo webovom prehliadači.<br>
+        Väčšinou sa k nemu pridávajú kaskádové štýly (CSS) a skriptovacie jazyky, ako je JavaScript.<br> 
+        Webové prehliadače prijímajú dokumenty HTML z webového servera alebo z lokálneho ukladacieho priestoru a vykresľujú dokumenty na 
+        multimediálne webové stránky. HTML prvky sú stavebnými kameňmi webových stránok.<br>
+        HTML patrí medzi <b>front-end</b> programovacie jazyky.</p>
+      <div class="main-meta flex"></div>
+    </article>
+    
+    <!-- css -->
+    <article hidden class="main-info flow" id="css-tab" tabindex="0" role="tabpanel">
+      <p><b>CSS</b> (Cascading Style Sheets) CSS tvorí dizajn web stránky, umožňuje oddelenie obsahu, vrátane rozloženia, farieb a fontov. <br>
+        Dokáže zlepšiť dostupnosť obsahu, umožnuje viacerým webovým stránkam zdieľať formátovanie v samostatnom súbore .css,
+         čo znižuje zložitosť. CSS patrí medzi <b>front-end</b> programovacie jazyky 
+         CSS je popri HTML a JavaScript základnou technológiou World Wide Web (www).</p>
+      <div class="main-meta flex"></div>
+    </article>
+    
+    <!-- javascript -->
+    <article hidden class="main-info flow" id="javascript-tab" tabindex="0" role="tabpanel">
+      <p><b>JavaScript</b> JS, je programovací jazyk, ktorý patrí do skupiny základných technológií World Wide Web(www).<br>
+          Javascript je objektovo orientovaný programovací jazyk.<br> 
+          Najznámejšie knižnice Javascriptu sú <b>jQuery</b> <b>React.js</b>
+          Má aplikačné programovacie rozhrania (API) na prácu s textom, dátumami, regulárnymi výrazmi, 
+          štandardnými dátovými štruktúrami a objektovým modelom dokumentu<br>
+          JavaScript je <b>front-end</b> aj <b>back-end</b> programovací jazyk. </p>
+      <div class="main-meta flex"></div>
+    </article>
+
+
+    <article hidden class="main-info flow" id="priklad-tab" tabindex="0" role="tabpanel">
+      <p><b>Prvý obrázok</b> : môžeme vidieť web stránku (jednoduché počítadlo) vytvorenú iba pomocou programovacieho jazyka HTML. Daná webstránka je nefunkčná a pre návštevníka nezaujimavá<br>
+         <b>Druhý obrázok</b> : je tá ista web stránka ale je v nej použitý aj programovací jazyk CSS ktorý danú webstránku graficky upraví, ale web stránka (počítadlo) je stále nefunkčná <br>
+         <b>Tretí obrázok</b> :  vidíme stránku v ktorej je už použitý aj programovací jazyk JavaScript a počítadlo funguje , túto funkčnosť sme dosiahli práve vďaka spomínanemu JavaScriptu.   
+      </p>
+    
+      <div class="main-meta flex"></div>
+    </article>
+  </main>
+</body>
+</html>
+
+
+

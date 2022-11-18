@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>3D tlač na webe</title>
+  <script src="navigation.js" defer></script>
+  <script src="tabs.js" defer></script>
+</head>
+<body class="pozadie">
+  <header class="primary-header flex">
+    <div>
+      <a href="index.html">
+      <img src="./assets/logo.png" alt="spspp logo" class="logo">
+      </a>
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" 
+        aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true"></span>Domov</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="tlaciarne.html"><span aria-hidden="true"></span>3DTlač</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="tlaciarne2.html"><span aria-hidden="true"></span>Tlačiarne</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="programovanie.html"><span aria-hidden="true"></span>Programovanie</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="oprojekte.html"><span aria-hidden="true"></span>Oprojekte</a>
+        </ul>
+    </nav>
+  </header>
+
+  <main class="grid-container grid-container--home">
+    <div>
+      <h1 class="text-white fs-700 ff-sans-cond uppercase letter-spacing-1 marg">3D tlač<br>na webe</h1> 
+      
+      <p>Hlavným cieľom tohto projektu je vysvetliť problematiku a spôsoby <b>3D tlače</b>, využitie 3D tlačiarní v praxi.Taktiež, 
+        na akom princípe funguje <b>programovanie</b> webových stránok v programovacích jazykoch HTML, CSS a JavaScript, čo je to Front End a Back End.  </p>
+    </div>
+    <div>
+      <a href="tlaciarne.html" class="large-button uppercase ff-serif fs-600 text-dark bg-white">Zistiť Viac</a>
+    </div>
+  </main> 
+</body>
+</html>
+

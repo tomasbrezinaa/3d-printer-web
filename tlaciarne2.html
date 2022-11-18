@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>3D tlačiarne</title>
+  <script src="navigation.js" defer></script>
+  <script src="tabs.js" defer></script>
+  <script src="navbar.js" defer></script>
+</head>
+
+<body class="pozadie2 overflow">
+  <header class="primary-header flex">
+    <div>
+      <a href="index.html">
+      <img src="./assets/logo.png" alt="spspp logo" class="logo">
+      </a>
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true"></span>Domov</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="tlaciarne.html"><span aria-hidden="true"></span>3DTlač</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="tlaciarne2.html"><span aria-hidden="true"></span>Tlačiarne</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="programovanie.html"><span aria-hidden="true"></span>Programovanie</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="oprojekte.html"><span aria-hidden="true"></span>OProjekte</a>
+        
+        </ul>
+    </nav>
+  </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Na začiatok</button>
+
+  <div class="tab-list underline-indicators flex pozicia sticky" role="tablist" aria-label="tlaciarne list">
+    <a href="#sekcia1" class="uppercase ff-sans-cond text-accent letter-spacing-2 txtd" tabindex="0" data-image="tlaciarne-image">3D Tlačiareň</a>
+    <a href="#sekcia2" class="uppercase ff-sans-cond text-accent letter-spacing-2 txtd" tabindex="0" data-image="tlaciarne-image">Riadenie tlačiarne</a>
+    <a href="#sekcia3" class="uppercase ff-sans-cond text-accent letter-spacing-2 txtd" tabindex="0" data-image="tlaciarne-image">Materiál</a>
+    <a href="#sekcia4" class="uppercase ff-sans-cond text-accent letter-spacing-2 txtd" tabindex="0" data-image="tlaciarne-image">Nastavenie tlačiarne</a>
+    <a href="#sekcia44" class="uppercase ff-sans-cond text-accent letter-spacing-2 txtd" tabindex="0" data-image="tlaciarne-image">Chyby pri 3D tlači  </a>
+    <a href="#sekcia5" class="uppercase ff-sans-cond text-accent letter-spacing-2 txtd" tabindex="0" data-image="tlaciarne-image">Programy na tvorbu 3D modelu</a>   
+    <a href="#sekcia6" class="uppercase ff-sans-cond text-accent letter-spacing-2 txtd" tabindex="0" data-image="tlaciarne-image">Ukážka tlače FDM a SLA</a>         
+</div>
+
+
+<article id="sekcia1">
+    <main class="grid-container grid-container--projekt flow ">
+      <h1 class="numbered-title pozicia2">3D Tlačiarne</h1>
+      
+      <article class="projekt-details flow pozicia222">
+        <h3 id="ender"><b>Creality Ender 3</b></h3>
+        <p>Creality Ender 3 je FDM 3D tlačiareň. To znamená, že tlačí diely tavením a vytláčaním termoplastického vlákna cez vyhrievaný 
+        jednoduchý extrudér vybavený systémom Bowdenovho podávača. 
+        Modul extrudéra bol navrhnutý na tlač s filamentom s priemerom 1,75 mm.<br>
+        Ender 3 pozostáva z kovovej konštrukcie. Rám aj vodiaca skrutka osi Z sú vyrobené z hliníka. 
+        Výsledkom je stabilná konštrukcia so zníženými vibráciami.</p>
+        <p>
+            <b>Technológia</b>: FDM (tavené nanášanie)<br>
+            <b>Max. rýchlosť tlače</b>: 200 mm/s<br>
+            <b>Presnosť tlače</b>: +/- 100 mikrónov<br>
+            <b>Typ extrudéra</b>: jednoduchý<br>
+            <b>Maximálna teplota extrudéra</b>: 255 °C<br>
+            <b>Konektivita</b>: SD karta, USB<br><br>
+            <b>CENA</b> : <a href="https://www.alza.sk/creality-ender-3-d5462906.htm" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: white;" ><b>250 €</b>(klikni pre presmerovanie do obchodu)</a>
+        </p>
+
+        <br>  <br>  <br>
+        <h3><b>Creality Ender 5-Pro</b></h3>
+        <p>Ender 5 Pro je <b>FDM</b> 3D tlačiareň. Tlačiareň je vybavená magnetickým ohniskom 220 x 220 mm, motorom s dvojitou osou Y, tyčou osi Z s hrúbkou 8 mm a 
+            nezávislými ovládačmi krokového motora pre každú z jeho osí.
+            So pracovným priestorom 220 x 220 x 300 mm je vybavený možnosťou obnovenia tlače, ktorá zabraňuje zlyhaniam v dôsledku výpadkov.<br>
+            Tlačiareň je vybavená základnou doskou V1.15 Silent Mainboard s tichými ovládačmi TMC2208.
+            Doska je dodávaná s firmvérom Marlin 1.1.8, bootloaderom a tepelnou ochranou</p>
+        <p>
+            <b>Technológia</b>: FDM (tavené nanášanie)<br>
+            <b>Max. rýchlosť tlače</b>: 60 mm /s<br>
+            <b>Presnosť tlače</b>: +/- 100 mikrónov<br>
+            <b>Typ extrudéra</b>: jednoduchý<br>
+            <b>Maximálna teplota extrudéra</b>: 260 °C<br>
+            <b>Konektivita</b>: SD karta, USB<br><br>
+            <b>CENA</b> : <a href="https://www.alza.sk/creality-ender-5-pro-d5853391.htm" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: white;" ><b>330 €</b>(klikni pre presmerovanie do obchodu)</a>
+        </p>
+
+
+
+        <h3><b>Prusa i3 MK3S+</b></h3>
+        <p>Prusa i3 MK3S+ je <b>FDM</b> 3D tlačiareň od českého výrobcu Prusa. Verziu MK3S využíva sondu  SuperPINDA, pomocou ktorej je možné dosiahnuť lepšiu kalibráciu prvej vrstvy. Ďalej obsahuje ložiská Misumi . Tlačiareň má  vyhrievanú podložku s odnímateľnými pružnými tlačovými plátmi s PEI povrchom, ďalej je tu automatický Mesh Bed Leveling na vyrovnanie nerovostí podložky a senzor  filamentu</p>
+        <p> <h3><b>Hlavné vlastnosti</b></h3>
+            <b>Technológia</b>: FDM (tavené nanášanie)<br>
+            <b>Riadiaca doska</b>:EINSY RAMBo 8-bit s drivermi Trinamic 2130 (256 mikrokrokov)<br>
+            <b>Max. rýchlosť tlače</b>: 200+ mm/s<br>
+            <b>Priemer filamentu</b>:1,75 mm<br>
+            <b>Extruder</b>:Priamý pohon, Bondtech podávacie kolieska, hotend E3D V6<br>
+            <b>Maximálna teplota extrudéra</b>: 300 °C<br>
+            <b>Maximálna teplota podložky</b>: 120 °C<br>
+            <b>CENA</b> : <a href="https://www.prusa3d.com/cs/produkt/3d-tiskarna-original-prusa-i3-mk3s-3/?country=SK&currency=eur&gclid=Cj0KCQiAxoiQBhCRARIsAPsvo-yAkqecYCRcSi9YOVXgdrSK2aPzhfnYoE-Nw8jmdGLXCJesfYwd7NkaAvbaEALw_wcB" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: white;" ><b>999 €</b>(klikni pre presmerovanie do obchodu)</a>
+        </p>
+
+
+
+        <br>  <br>  <br>
+        <h3><b>Creality LD-002H</b></h3>
+        <p>Creality LD-002H je <b>SLA</b> 3D tlačiareň. Creality LD-002H je kompaktná stolná SLA 3D tlačiareň, 
+            ponúka pracovný priestor o rozmeroch 130 x 82 x 160 mm. Ako materiál sa používa UV resin (živica). Výhodou tejto tlačiarne je ľahke ovládanie pomocou 3D displeju.</p>
+        <p>
+            <b>Technológia</b>: SLA (stereo-litografia)<br>
+            <b>Max. rýchlosť tlače</b>: 1-4s/vrstvu<br>
+            <b>Presnosť tlače</b>: 51 μm<br>
+            <b>Displej</b>: 3,5-palcový dotykový displej<br>
+            <b>Pracovný priestor</b>: 130 x 82 x 160 mm<br>
+            <b>Konektivita</b>: USB<br><br>
+            <b>CENA</b> : <a href="https://www.alza.sk/creality-ld-002h-d6381939.htm" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: white;" ><b>225 €</b>(klikni pre presmerovanie do obchodu)</a>
+        </p>        
+      </article>
+
+      <picture>
+        <img src="assets/edner3.png" alt="" style="margin-top: 50px;">
+        <img src="assets/ender5.png" alt="" style="margin-top: 15rem;">
+        <img src="assets/prusa.png" alt="" style="margin-top: 15rem;">
+        <img src="assets/slatlaciaren.png" alt="" style="margin-top: 20rem; margin-bottom: -4rem;">
+      </picture>
+    </main>
+   
+  </article>
+
+    <article id="sekcia2">
+        <main class="grid-container grid-container--projekt flow " >
+          <h1 class="numbered-title uprava3 pozicia2">Riadenie 3D tlačiarne</h1>
+          <article class="projekt-details flow upravaa3">
+            <p>Riadiaca doska je zodpovedná za všetky elektronické funkcie 3D tlačiarne môžme to vnímať ako nejaký programovateľný logický automat (<b>PLC</b>)<br>
+                Bez nej by tlačiareň nedokázala oveľa viac, než len zapínať a vypínať určité komponenty ručným stlačením spínača.
+                Táto riadica doska zabezpečuje všetku logiku 3D tlače, ako je <b>analýza súborov G-kódu</b> , <b>regulácia teploty</b> a čo je najdôležitejšie, 
+                <b>riadenie pohybu</b>.<br>
+                Pri výbere riadacej dosky by sme mali brať do úvahy tieto faktory <br>
+    
+                <b>Podpora pokročilých funkcií</b>: Firmvér pre 3D tlač s otvoreným zdrojovým kódom sa neustále a rýchlo zdokonaľuje, ako užitočné funkcie riadiacej dosky môžme spomenúť 1/256 mikrokrokovanie, režim UART a Wi-Fi.<br>
+                <b>Výkon procesora</b>: 32-bitové dosky sú čoraz populárnejšie. Výkonné procesory zabezpečia, že daný 3D objekt si vie tlačiareň rýchlejšie vykresliť.</p>
+
+            <h3><b>Lerdge-Z</b></h3> <p><p>Riadiaca doska Lerdge-Z má za cieľ čo najviac 
+                zjednodušiť proces nastavenia. Všetky nastavenia 
+                firmvéru sa vykonávajú priamo na dotykovom displeji tlačiarne<br>
+                <b>Mikrokontrolér</b>: STM32F407VET</p>
+                <b>Vstupné napätie</b>: 10 až 28 V<br>
+                <b>Cena</b>:<a href="https://shop.lerdge.com/products/lerdge-z-board" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: white;" ><b>70 €</b>(klikni pre presmerovanie do obchodu)</a></p>
+
+            <h3><b>Smoothieboard v1</b></h3> <p>Táto riadiaca doska je 32-bitová  so 120 MHz procesorom, taktiež má svoj vlastný softvér s názvom  
+                Smoothieware s ktorým veľmi dobre spolupracuje.<br>
+                <b>Mikrokontrolér</b>:LPC1769</p>
+                <b>Vstupné napätie</b>: 12 až 24 V<br>
+                <b>Cena</b>: <a href="https://www.gearbest.com/3d-printers--3d-printer-kits/pp_3001572678564559.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: white;" ><b>64 €</b>(klikni pre presmerovanie do obchodu)</a></p>
+
+            <h3><b>SKR Mini E3</b></h3> <p>Riadiaca doska pre tlačiarne <a href="#ender" style="text-decoration: none; color: white;" ><b>Ender 3</b>(klikni pre presmerovanie)</a> a Ender 3 Pro SKR mini E3 V2.0, 4 kanály, osadená tichými ovládačmi Trinamic.<br>
+                <b>Mikrokontrolér</b>: STM32F103RCT6</p>
+                <b>Vstupné napätie</b>: 12 až 24 V<br>
+                <b>Cena</b>: <a href="https://www.3djake.sk/bigtreetech/skr-mini-e3?gclid=CjwKCAiA866PBhAYEiwANkIneJPHjrSEOrkweRw0jd0KgQyVy-xh_tRoWiow_PZi7Za92mC8SeZJghoC8dQQAvD_BwE" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: white;" ><b>50 €</b>(klikni pre presmerovanie do obchodu)</a></p>
+
+          </article>
+          <picture style="margin-top: 34rem;">
+            <img class="aboutimage" src="assets/doska1.png" alt="" style="margin-left: -1.7rem; margin-bottom: 0rem;">
+            <img class="aboutimage" src="assets/doska2.png" alt="" style="margin-left: -1.7rem; margin-top: 5rem;">
+            <img class="aboutimage" src="assets/doska3.png" alt="" style="margin-left: -1.7rem; margin-top: 5rem; margin-bottom: -7rem;">
+            
+          </picture>
+        </main> 
+  </article>
+
+    <article id="sekcia3">
+        <main class="grid-container grid-container--projekt flow ">
+          <h1 class="numbered-title pozicia2">Materiál tlačenia</h1>
+          
+          <article class="projekt-details flow uprava2">
+            <h3><b>PLA</b></h3> <p>je najbežnejším plastovým materiálom pri 3D tlači.
+              Je to dobre známy filament pre 3D tlač pre svoju flexibilitu, trvanlivosť, nízke trenie a odolnosť proti korózii. Použiva sa pri <b>FDM</b> tlači.
+              <br>Je dobrý pre začiatočníkov , lepšie reaguje na teplotné výkyvy ako ABS plast, odporučaná teplota prostredia pri tlači je 20°C, 
+              približná teplota na ktorú je potrebné nahriať filamnet je rôzna a závisí od výrobcu ale pohybuje okolo hodnoty 200 - 215 °C a 
+              teplota podložky by sa mala byť okolo 60°C. <br>
+              <br>Pri prípadnom dodatkovom obrabaní musíme obrobok chladiť , najčastejšie pri vŕtaní a rezaní pretože PLA plast sa natavuje a môže spôsobiť deformáciu a zachytávanie materiálu
+              na obrabací nástroj.</p>
+
+            <h3><b>ABS</b></h3> <p>ABS (akrylonitrilbutadiénstyrén) je termoplast, ktorý sa bežne používa ako filament pre 3D tlačiarne. 
+                Je to tiež materiál všeobecne používaný v osobnej alebo domácej 3D tlači a je to materiál, ktorý sa používa pre väčšinu 3D tlačiarní.Má veľkú farebnú škálu a má vysokú mechanickú pevnosť.Použiva sa pri <b>FDM</b> tlači.<br>
+              ABS plast sa taví pri teplote 255°C no taktiež potrebujeme nahrievaciu podložku pretože ABS plast je veľmi náchylný na teplotu okolia, Pri použití nahrievanej podložky sa zníži šanca do deformáciu výrobku.</p>
+            <h3><b>Živica</b></h3> <p>Živica je jedným z najpoužívanejších materiálov v 3D tlači. Používa sa najmä v technológiách ako <b>SLA</b> DLP, Multijet či CLIP. 
+                Existujú rôzne typy živíc, ktoré možno použiť v 3D tlači, ako sú odlievacie živice, tvrdé živice, flexibilné živice. </p>
+            <h3><b>Titán</b></h3> <p>Titán je najpevnejší a najľahší materiál pre 3D tlač. Používa sa v procese nazývanom Direct Metal Laser Sintering(<b>DMLS</b>). 
+                Tento kov sa používa hlavne v oblastiach, ako je prieskum vesmíru, letectvo a zdravotníctvo.</p><br>
+          </article>
+          <picture>
+            <img class="aboutimage" src="assets/filament.png" alt="" style="margin-left: -1.7rem; margin-top: 4rem;" >
+            <img class="aboutimage" src="assets/abs.png" alt="" style="margin-left: -1.7rem; margin-top: 15rem; margin-bottom: 5rem;">
+            <img class="aboutimage" src="assets/resin.png" alt="" style="margin-left: -1.7rem; margin-top: 2rem; margin-bottom: -2rem;">
+            <img class="aboutimage" src="assets/titan.png" alt="" style="margin-left: -1.7rem; margin-top: 2rem; margin-bottom: -14rem;">
+            
+          </picture>
+        </main>
+   
+  </article>
+
+  <article id="sekcia4">
+    <main class="grid-container grid-container--projekt flow yyy">
+      <h1 class="numbered-title pozicia2 emm">Nastavenie 3D tlačiarne</h1>
+      
+      <article class="projekt-details flow">
+        <p><h3>Krok 1.</h3>Exportujte súbor - do programu si nahráme súbor ".stl" ktorý sme si vytvorili alebo stiahli z komunitných server ktoré nám ponukajú tisíce 3D modelov zdarma.
+        <h3>Krok 2.</h3>Nastavenie a tlač - nastavíme si zakladné hodnoty pre tlač a taktiež polohu v ktorej ma 3D tlačiareň začať.
+        <h3>Krok 3.</h3>Poznámky k nastaveniam ktoré budú použité pri tlači :  <br><b>Percento výplne</b> : Toto je v podstate hustota dielu. Čím vyššie percento, tým hustejší bude hotový výrobok.<br>
+                                                      <b>Podložka</b> : tenký, rovný, pevný povrch, ktorý je postavený na spodnej strane dielu.
+        <h3>Krok 4.</h3>Vloženie filamentu alebo resinu - <b>Filament</b> vložíme do extrudéru. Filament je cievkový plastový materiál, ktorý používajú 3D tlačiarne FDM na stavbu objektov. Vlákno prichádza vo veľkom množstve farieb, nepriehľadnosti a materiálových vlastností.
+        <h3>Krok 5.</h3>Predhriatie a tlač - <b>Predhrievanie</b> je dobrý spôsob, ako zabezpečiť, aby bol extrudér zahriaty a pripravený na použitie.
+        <h3>Krok 6.</h3>Finálne nahratie - súbor nahráme do 3D tlačiarne napríklad pomocou SD karty , tento súbor obsahuje aj  hodnoty pre nastavenie tlače.
+        <h3>Krok 7.</h3>Odobratie výrobku - počkáma kým výrobok vychladne, očistíme ho od prebytočných častí a výrobok je hotový.</p>
+
+      <picture>
+      </picture>
+    </main>
+
+</article>
+
+
+<article id="sekcia44">
+  <main class="grid-container grid-container--projekt flow yyy">
+    <h1 class="numbered-title pozicia2 emm">Chyby pri 3D tlači</h1>
+    
+    <article class="projekt-details flow">
+      <p>Pri procese 3D tlače sa môžeme stretnúť s chybami ktoré ovplyvnia proces tlače a preto si niektoré chyby popíšeme a následne aj ukážeme spôsob ako sa im vyhnúť respektíve ako ich napraviť.<br></p><br>
+        <b>Teplota prostredia</b><p>Teplota prostredia by mala byť okolo <b>21°C</b> a mala by byť nominálna ,výkyvy teplôt v prostredí môžu mať nepriaznivý vplyv na výsledný výrobok.</p> <br>
+        <b>Filament</b><p>Pri výbere filamanetu by sme si mali všímať kvalitu daného filamentu , pretože nekvalitný filament má rôznu hrúbku(nestály priemer filamentu) a to môže spôsobiť nerovnomernosť výrobku.</p> <br>
+        <b>Chladenie</b><p> Musíme zabezpečiť dobré chladenie , pretože ak by sa nám filament prehrial zapričinil by výrazne zhoršenie kvality hotového výrobku.</p> <br>
+        <b>Podložka</b><p>Podložka pod obrobkom musí byť v jednej rovine a taktiež musí byť správna jej vzdialenosť od trysky, niektoré tlačiarne si túto hodnotu pred procesom tlače skontrolujú, pri iných musíme túto vzdialenosť skontrolovť manuálne.<br>Povrch podložky musí byť čistý aby sa zabránilo mastnote na povrchu podložky a výsledného výrobku.<br><br>
+        Pri <b>ABS</b> plaste sa odporúča použiť nahrievaciu podložku čím sa znižuje šanca na deformáciu tlačeného výrobku v dôsledku toho že plast je haklivý na výkyvy teplôt. </p> <br>
+    <picture>
+    </picture>
+  </main>
+
+</article>
+
+  <article id="sekcia5">
+    <main class="grid-container grid-container--projekt flow upravaa2 ">
+      <h1 class="numbered-title pozicia2">Tvorba 3D modelu</h1>
+      
+      <article class="projekt-details flow">
+        <p>Program slúži na vytvorenie a na exportovanie údajov do 3D tlačiarne<br>
+        Medzi najpoužívanejšie programy patrí : <br><br>
+      <b>Autodesk Fusion 360</b>: najpoužívanejši program pri tvorbe 3D modelov. Spája jednuduché prostredie s rozšírenými funkciami. Okrem toho zefektívňuje proces vývoja produktu, 
+      aby sa zabezpečila hladšia a rýchlejšia dodávka vysokokvalitných produktov.<br>
+      <img class="aboutimage" src="assets/fusion.png">
+      <br>
+      <img class="upravaa" src="assets/ukazka11.png" style="border-radius: 15px;"> <br> <br>
+      
+      <b>Ultimaker Cura</b>: je softvérový nástroj s otvoreným zdrojovým kódom. Poskytuje relevantné odporúčania novým používateľom s odporúčaným režimom, 
+      čo z neho robí dobrý program pre nových používateľov.
+      Okrem toho ponúka prispôsobiteľné funkcie, ktoré spĺňajú rôzne požiadavky a umožňujú hĺbkovú kontrolu.<br><br>
+      <img class="aboutimage" src="assets/cura.png" alt=""> <br>
+      <img class="upravaa" src="assets/ukazka22.png" style="border-radius: 15px;" > <br><br>
+    
+      <b>Creo</b>: Pomocou programu Creo a jeho rozšíreniami môžete vytvárať, analyzovať, prezerať a zdieľať návrhy pomocou 2D CAD, 3D CAD a parametrov parametrického a priameho modelovania. Jeho výhodou je ľahké ovládanie a pokročilé funkcie pre tvorbu 3D modelu.</p>
+      <br> <img class="aboutimage" src="assets/creo.png" alt=""> <br>
+      <img class="upravaa" src="assets/ukazka33.jpg" style="border-radius: 15px;" > <br>
+      </article>
+      <picture>
+      </picture>
+    </main>
+    
+
+
+    <article id="sekcia6">
+        <main id="sekcia1" class="grid-container grid-container--projekt flow">
+          <h1 class="numbered-title">Ukážka 3D tlače FDM a SLA</h1>
+
+          <picture style="margin-left: -39rem;">
+            <p style="font-size: larger;">Spôsob <b>FDM</b></p>
+            <iframe  class="aboutimage video" width="560" height="315" src="https://www.youtube.com/embed/m_QhY1aABsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="font-size: larger;">Spôsob <b>SLA</b></p>
+            <iframe class="aboutimage video" width="560" height="315" src="https://www.youtube.com/embed/n_muoXfXlEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </picture>
+        </main> 
+</body>
+</html>
